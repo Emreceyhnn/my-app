@@ -7,6 +7,9 @@ export default async function Page() {
   return (
     <>
       <Typography>aksdasdaskdalskdm mala bak aq</Typography>
+      {item.map((element) => (
+        <h1 key={element.id}>{element.name}</h1>
+      ))}
     </>
   );
 }
